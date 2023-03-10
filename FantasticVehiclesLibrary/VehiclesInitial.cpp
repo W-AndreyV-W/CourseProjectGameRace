@@ -11,6 +11,9 @@ float VehiclesInitial::time() {
 float VehiclesInitial::distance() {
 	return _distance_race;
 }
+float VehiclesInitial::speed_vehicles() {
+	return _speed_vehicles;
+}
 
 bool VehiclesInitial::in_game() {
 	return _in_game;
