@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(CourseProjectGameRace)
+add_library(FantasticVehiclesLibrary SHARED ./FantasticVehiclesLibrary/Vehicles.h "FantasticVehiclesLibrary/VehiclesInitial.h" ./FantasticVehiclesLibrary/VehiclesInitial.cpp ./FantasticVehiclesLibrary/Ground.h ./FantasticVehiclesLibrary/Ground.cpp ./FantasticVehiclesLibrary/Camel.h ./FantasticVehiclesLibrary/Camel.cpp ./FantasticVehiclesLibrary/AllTerrainBoots.h ./FantasticVehiclesLibrary/AllTerrainBoots.cpp ./FantasticVehiclesLibrary/Centaur.h ./FantasticVehiclesLibrary/Centaur.cpp ./FantasticVehiclesLibrary/CamelFast.h ./FantasticVehiclesLibrary/CamelFast.cpp ./FantasticVehiclesLibrary/Air.h ./FantasticVehiclesLibrary/Air.cpp ./FantasticVehiclesLibrary/Eagle.h ./FantasticVehiclesLibrary/Eagle.cpp ./FantasticVehiclesLibrary/MagicCarpet.h ./FantasticVehiclesLibrary/MagicCarpet.cpp ./FantasticVehiclesLibrary/Broomstick.h ./FantasticVehiclesLibrary/Broomstick.cpp)
+add_library(MenuLibrary STATIC ./MenuLibrary/Menu.h ./MenuLibrary/Menu.cpp)
+add_library(ArreyVehiclesLibrary STATIC ./ArreyVehiclesLibrary/ArreyVehicles.h ./ArreyVehiclesLibrary/ArreyVehicles.cpp)
+add_executable(GameRace CourseProjectGameRace.cpp)
+target_link_libraries(GameRace FantasticVehiclesLibrary MenuLibrary ArreyVehiclesLibrary)
