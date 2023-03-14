@@ -3,7 +3,7 @@
 #include "../FantasticVehiclesLibrary/Vehicles.h"
 
 //	Создание массива 
-void arrey_creating(VehiclesInitial**& array_vehicles, int& size_array, float distance_race, int type_race);
+void arrey_creating(VehiclesInitial**& array_vehicles, int& size_array, int& type_race, float distance_race);
 //	Сортировка массива 
 void arrey_sorting(VehiclesInitial**& array_vehicles, int size_array);
 //	Удаление массива
